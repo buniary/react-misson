@@ -6,7 +6,7 @@ import { add, multiply } from './components/Math2'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import { useState } from 'react'
-import styles from './productcard.module.css'
+import styles from './productCard.module.css'
 import myImg from './unsplash.jpg'
 import { GoArchive } from "react-icons/go";
 
