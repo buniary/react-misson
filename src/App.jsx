@@ -3,7 +3,7 @@ import './App.css'
 import myadd, { PI } from './components/Math'
 // 이름 내보내기
 import { add, multiply } from './components/Math2'
-import Header from './components/header'
+import Header from './components/Header'
 import Footer from './components/Footer'
 import { useState } from 'react'
 import styles from './productcard.module.css'
