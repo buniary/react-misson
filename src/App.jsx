@@ -1,9 +1,10 @@
 import './App.css';
-import myadd, { PI } from './component/Math';
-import { add, multiply } from './component/Math2';
-import { Header } from './component/Header';
-import { Footer } from './component/Footer';
+import myadd, { PI } from './components/Math';
+import { add, multiply } from './components/Math2';
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
 import { useState } from 'react';
+import { Card } from './components/Card';
 
 function ProductCard(props) {
   console.log(props);
@@ -133,6 +134,8 @@ function App() {
         <hr />
         <h2>조건부 렌더링</h2>
         <LoginBox />
+        <hr/>
+        <Card/>
 
       </main>
       <hr />
