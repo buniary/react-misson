@@ -5,6 +5,7 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { useState } from 'react';
 import { Card } from './components/Card';
+import { ProductsCard } from './components/ProductCard';
 
 function ProductCard(props) {
   console.log(props);
@@ -15,6 +16,7 @@ function ProductCard(props) {
     </div>
   )
 }
+
 
 const InputBox = () => {
   const [text, setText] = useState('');
@@ -101,6 +103,17 @@ function App() {
   const handleClick = () => {
     alert('클릭됨')
   }
+  
+  const cardPrd = {name: "무선 키보드", price: 39000, brand: "EZTECH"};
+
+  const products = [
+    { id: 1, name: "무선 키보드", price: 39000, brand: "EZTECH" },
+    { id: 2, name: "무선 마우스", price: 29000, brand: "EZTECH" },
+    { id: 3, name: "모니터", price: 199000, brand: "EZTECH" }
+  ];
+  const prdMap = products.map(item=> <ProductsCard key={item.id} name={item.name} price={item.price} brand={item.brand}/>)
+
+  //const productsMap = product.map(item=><Cards key={item.id} name={item.name} price={item.price} brand={item.brand} />)
 
   return (
     <>
@@ -135,8 +148,8 @@ function App() {
         <h2>조건부 렌더링</h2>
         <LoginBox />
         <hr/>
-        <Card/>
-
+        <Card name={cardPrd.name} price={cardPrd.price} brand={cardPrd.brand}/>
+        {prdMap}
       </main>
       <hr />
       <Footer />

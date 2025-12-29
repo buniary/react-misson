@@ -1,5 +1,4 @@
-
-export function Card({name, price, brand}) {
+export function ProductsCard({name, price, brand}) {
   return (
     <div>
       <h2>{name}</h2>
@@ -8,4 +7,3 @@ export function Card({name, price, brand}) {
     </div>
   )
 }
-
